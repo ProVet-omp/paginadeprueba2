@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pagina de prueba</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      color: #111827;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 600;
+      text-align: center;
+    }
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      background: #25D366;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+    }
+    .whatsapp:hover { background: #1ebe5d; }
+    .whatsapp:focus-visible {
+      outline: 3px solid #111827;
+      outline-offset: 4px;
+    }
+    .whatsapp svg { width: 24px; height: 24px; flex: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>pagina de prueba</h1>
+  </main>
+
+  <!-- REEMPLAZA 519000000000 por el número real de ventas, con código de país y sin + ni espacios. -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/519000000000"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar ventas por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor">
+      <path d="M16.04 3C8.87 3 3.04 8.77 3.04 15.88c0 2.28.61 4.51 1.77 6.47L3 29l6.87-1.79a13.1 13.1 0 0 0 6.16 1.55h.01c7.16 0 13-5.78 13-12.88A12.8 12.8 0 0 0 16.04 3Zm0 23.59h-.01a10.9 10.9 0 0 1-5.52-1.5l-.4-.23-4.08 1.06 1.09-3.94-.26-.41a10.63 10.63 0 0 1-1.67-5.69c0-5.96 4.88-10.81 10.87-10.81 2.9 0 5.63 1.12 7.68 3.16a10.7 10.7 0 0 1 3.18 7.64c0 5.96-4.88 10.81-10.88 10.81Zm5.97-8.1c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.74.16-.22.32-.85 1.06-1.04 1.28-.19.21-.38.24-.71.08-.33-.16-1.39-.51-2.65-1.63-.98-.87-1.64-1.94-1.83-2.27-.19-.32-.02-.5.14-.66.15-.14.33-.37.49-.55.16-.19.22-.32.33-.54.11-.21.06-.4-.03-.56-.08-.16-.74-1.76-1.01-2.41-.27-.63-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.4-.3.32-1.14 1.11-1.14 2.7s1.17 3.13 1.33 3.35c.16.21 2.3 3.49 5.58 4.89.78.33 1.39.53 1.87.68.79.25 1.5.21 2.06.13.63-.09 1.93-.79 2.2-1.55.27-.77.27-1.43.19-1.56-.08-.14-.3-.22-.63-.38Z"/>
+    </svg>
+    WhatsApp ventas
+  </a>
+</body>
+</html>
